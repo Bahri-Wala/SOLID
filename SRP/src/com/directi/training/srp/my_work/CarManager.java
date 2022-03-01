@@ -5,11 +5,11 @@ import java.util.List;
 
 public class CarManager
 {
-    private final CarDao _carDao;
-    private final CarFilter _carFilter;
-    private final CarRater _carRater;
+    private final ICarDao _carDao;
+    private final ICarFilter _carFilter;
+    private final ICarRater _carRater;
 
-    public CarManager(CarDao carDao, CarFilter carFilter, CarRater carRater)
+    public CarManager(ICarDao carDao, ICarFilter carFilter, ICarRater carRater)
     {
         _carDao = carDao;
         _carFilter = carFilter;
